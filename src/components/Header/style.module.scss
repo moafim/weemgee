@@ -1,0 +1,68 @@
+@import "src/style/dimension.scss";
+@import "src/style/colors.scss";
+
+.container {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  height: $headerHeight;
+  align-items: center;
+}
+
+.logoContainer {
+  flex-grow: 1;
+  margin: 0 0 0 30px;
+}
+
+.inputSearch {
+  height: $searchInput;
+  width: 454px;
+  border-radius: calc(#{$searchInput} / 2);
+  border-width: 0;
+  outline: none;
+  padding-left: calc(#{$searchInput} / 2);
+  padding-right: calc(#{$searchInput} / 2);
+}
+
+.inputSearch::placeholder {
+  color: $black-two;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.menuContainer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchConteiner {
+  margin: 0 65px 0 0;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  color: $black-two;
+  font-size: 12px;
+  margin: 0 25px 0 0;
+  letter-spacing: 2px;
+}
+
+.profileContainer {
+  margin: 0 30px 0 0;
+}
+
+.basketContainer {
+  margin: 0 15px 0 24px;
+}
+
+.divider {
+  height: 30px;
+  width: 1px;
+  background-color: $line-gray;
+}

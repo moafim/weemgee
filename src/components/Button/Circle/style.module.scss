@@ -1,0 +1,9 @@
+@import "src/style/dimension.scss";
+@import "src/style/colors.scss";
+
+.container {
+  height: $circleButton;
+  width: $circleButton;
+  background-color: $white;
+  border-radius: calc(#{$circleButton}/ 2);
+}

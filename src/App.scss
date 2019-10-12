@@ -1,0 +1,11 @@
+@import "./style/colors.scss";
+
+.App {
+  background-color: $background;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
