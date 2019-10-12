@@ -1,6 +1,8 @@
 @import "./style/colors.scss";
 
 .App {
+  position: absolute;
+  width: 100vw;
   background-color: $background;
 }
 

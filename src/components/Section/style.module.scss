@@ -1,0 +1,24 @@
+@import "src/style/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 19px 30px 15px;
+}
+
+.title {
+  flex-grow: 1;
+  letter-spacing: 3;
+  font-size: 18px;
+  font-weight: 400;
+  color: $steel;
+}
+
+.link {
+  letter-spacing: 3;
+  font-size: 16px;
+  font-weight: 400;
+  flex-shrink: 0;
+  color: $aqua-marine;
+}

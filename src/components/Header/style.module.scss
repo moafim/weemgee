@@ -3,10 +3,13 @@
 
 .container {
   position: sticky;
+  background-color: $background;
+  top: 0;
   display: flex;
   flex-direction: row;
   height: $headerHeight;
   align-items: center;
+  border-bottom: 1px solid $line-gray;
 }
 
 .logoContainer {

@@ -1,0 +1,27 @@
+@import "src/style/dimension.scss";
+@import "src/style/colors.scss";
+
+.container {
+  height: $homeMenuItem;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer {
+  height: $homeMenuIcon;
+  width: $homeMenuIcon;
+  background-color: $charcoal-grey;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: $charcoal-grey;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
