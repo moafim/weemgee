@@ -1,3 +1,53 @@
+@import "src/style/colors.scss";
+
 .container {
+  --height: 10px;
+  --ctaHeight: 10px;
+  --radius: 10px;
+  --gradient: red;
+  position: relative;
   flex-grow: 1;
+  overflow: hidden;
+  border-radius: var(--radius);
+  height: var(--height);
+  background-color: $steel;
+  margin: 0 15px;
+}
+
+.imageContainer {
+  border-radius: var(--radius);
+  position: absolute;
+  z-index: 0;
+  border-radius: var(--radius);
+}
+
+.cta {
+  position: absolute;
+  bottom: 0;
+  height: var(--ctaHeight);
+  width: 100%;
+  background-image: -moz-linear-gradient(var(--gradient));
+  background-image: -o-linear-gradient(var(--gradient));
+  background-image: -webkit-linear-gradient(var(--gradient));
+  z-index: 1;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $white;
+}
+
+.title {
+  flex-grow: 1;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 0 19px;
+}
+
+.stat {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0 19px 0 0;
 }
